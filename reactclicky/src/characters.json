@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1, 
+        "name": "Mario",
+        "image": "../images/mario.jpg"
+    },
+    {
+        "id": 2, 
+        "name": "Peach",
+        "image": "../images/peach.jpg"
+    },
+    {
+        "id": 3, 
+        "name": "Bowser",
+        "image": "../images/bowser.jpg"
+    },
+    {
+        "id": 4, 
+        "name": "Toad",
+        "image": "../images/toad.jpg"
+    },
+    {
+        "id": 5, 
+        "name": "Yoshi",
+        "image": "../images/yoshi.jpg"
+    },
+    {
+        "id": 6, 
+        "name": "Luigi",
+        "image": "../images/luigi.jpg"
+    },
+    {
+        "id": 7, 
+        "name": "Wario",
+        "image": "../images/wario.jpg"
+    },
+    {
+        "id": 8, 
+        "name": "Donkey Kong",
+        "image": "../images/donkeykong.jpg"
+    },
+    {
+        "id": 9, 
+        "name": "Daisy",
+        "image": "../images/daisy.jpg"
+    },
+    {
+        "id": 10, 
+        "name": "Boo",
+        "image": "../images/boo.jpg"
+    },
+    {
+        "id": 11, 
+        "name": "Waluigi",
+        "image": "../images/waluigi.jpg"
+    },
+    {
+        "id": 12, 
+        "name": "Birdo",
+        "image": "../images/birdo.jpg"
+    }
+]
