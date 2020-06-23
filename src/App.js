@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import NavBar from "./components/NavBar";
 import Score from "./components/Score";
 import characters from "./characters.json";
-import CharacterCard from "./components/CharacterCard";
-import Alert from "./components/Alert";
+// import CharacterCard from "./components/CharacterCard";
+// import Alert from "./components/Alert";
 import GameBoard from "./components/GameBoard";
 import "./App.css";
 
@@ -15,10 +15,8 @@ class App extends Component{
     topScore: 0,
     alertMessage: ""
   }
-  
 
   handlePicked = event => {
-
     const name = event.target.attributes.getNamedItem("name").value;
     this.shuffleCharacters ()
     this.checkGuess (name, this.updateTopScore)
@@ -67,14 +65,6 @@ render () {
         <Score type = 'Top Score' score = {this.state.topScore} />
       </NavBar>
       <GameBoard>
-      {this.state.characters.map(character => (       
-        <CharacterCard 
-            id = {character.id}
-            name = {character.name}
-            image = {character.image}
-            handlePicked = {this.handlePicked}
-        />
-      ))}
       </GameBoard>
     </div>
             

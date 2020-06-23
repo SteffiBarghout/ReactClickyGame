@@ -30,7 +30,7 @@ export default function AutoGrid() {
         </div>
     )
     }
-                {/* <Grid item xs>
+                /* <Grid item xs>
                     <Paper className={classes.paper}>
                     <Buttons />
                     </Paper>
@@ -77,4 +77,4 @@ export default function AutoGrid() {
             </Grid>
         </div>
     )
-} */}
+} */

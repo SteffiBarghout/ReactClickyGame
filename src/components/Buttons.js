@@ -59,19 +59,19 @@ const images = [
     height: '30%',
   },
   {
-    url: './images/waluigi.jpg',
+    url: './images/waluigi.jpeg',
     title: 'Waluigi',
     width: '30%',
     height: '30%',
   },
   {
-    url: './images/wario.jpg',
+    url: './images/wario.png',
     title: 'Wario',
     width: '30%',
     height: '30%',
   },
   {
-    url: './images/yoshi.jpg',
+    url: './images/yoshi.png',
     title: 'Yoshi',
     width: '30%',
     height: '30%',
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   image: {
     position: 'relative',
     height: 200,
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100% !important', // Overrides inline-style
       height: 100,
     },
