@@ -1,11 +1,10 @@
 import React, {Component} from "react";
 import NavBar from "./components/NavBar";
-import Grid from "./components/Grid";
-import Card from "./components/Card";
 import Score from "./components/Score";
 import characters from "./characters.json";
 import CharacterCard from "./components/CharacterCard";
 import Alert from "./components/Alert";
+import GameBoard from "./components/GameBoard";
 import "./App.css";
 
 class App extends Component{
@@ -16,6 +15,7 @@ class App extends Component{
     topScore: 0,
     alertMessage: ""
   }
+  
 
   handlePicked = event => {
 
@@ -57,53 +57,29 @@ class App extends Component{
     }
   }
 
-  shuffleCharacters = () => {this.setState(this.shuffleArray(this.state.characters))}
+shuffleCharacters = () => {this.setState(this.shuffleArray(this.state.characters))}
 
-  render () {
-    return (
-      <div className ="App">
-        <NavBar/>
-          <Grid container direction = 'column'>
-            <Grid>
-              <Card>
-                {this.state.alertMessgae === "Keep Going" ? (
-                  <Alert message = {this.state.alertMessage} />
-                ) : (
-                  <Alert message = {this.state.alertMessage} />
-                )}
-              </Card>
-            </Grid>
-          <Grid>
-            <Grid>
-              <Card>
-                <Score type = 'Score' score = {this.state.pickedCharacters.length} />
-              </Card>
-            </Grid>
-          <Grid>
-            <Card>
-              <Score type = 'Top Score' score = {this.state.topScore} />
-            </Card>
-          </Grid>
-          </Grid>
-          </Grid>
-          <Grid>
-            <Grid container spacing = {24} justify = 'center' style = {{maxWidth: 945, margin: '0 auto'}}>
-              {this.state.characters.map(character => (
-                <Grid>
-                  <CharacterCard 
-                  id = {character.id}
-                  name = {character.name}
-                  image = {character.image}
-                  key = {character.id}
-                  handlePicked = {this.handlePicked}
-                  />
-                </Grid>
-              ))}
-            </Grid>
-          </Grid>
-      </div>
-    )
-  }
+render () {
+  return (
+    <div>
+      <NavBar>
+        <Score type = 'Score' score = {this.state.pickedCharacters.length} />
+        <Score type = 'Top Score' score = {this.state.topScore} />
+      </NavBar>
+      <GameBoard>
+      {this.state.characters.map(character => (       
+        <CharacterCard 
+            id = {character.id}
+            name = {character.name}
+            image = {character.image}
+            handlePicked = {this.handlePicked}
+        />
+      ))}
+      </GameBoard>
+    </div>
+            
+  )
+}
 }
 
 export default App;

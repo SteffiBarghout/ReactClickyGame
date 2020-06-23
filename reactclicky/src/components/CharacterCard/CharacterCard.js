@@ -5,12 +5,11 @@ const CharacterCard = ({ id, name, image, handlePicked }) => (
     <div class = "box effect1">
         <div
             className = "card"
-            key = {id}
-            data-id = {id}
+            id = {id}
             name = {name}
-            style = {{ backgroundImage: `url(${image})` }}
             onClick = {handlePicked}
         >
+            <image alt= "" src = "image"></image>
         </div>
     </div>
 )
