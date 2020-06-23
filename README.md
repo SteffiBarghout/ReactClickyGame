@@ -3,7 +3,7 @@
 
 ### Example of this project Front end: 
 > Click the image below to play the game
-<a href="" target="_blank">
+<a href="https://steffisbootcampdrive.github.io/ReactClickyGame/" target="_blank">
 <img src="public/images/GameBoard.png">
 </a>
 
@@ -17,8 +17,8 @@
 * HTML5
 * Material-UI
 
-## Play the Clickiest Game which ever Clicked
-1. Click this deployed project link: 
+## Play the Clickiest Game which ever Clicked (Front End User)
+1. Click [here](https://steffisbootcampdrive.github.io/ReactClickyGame/) to go to the game. 
 2. Select a character until you have selected all 12 characters, be careful only to select each character only once!
 3. Have fun clicking!
 
