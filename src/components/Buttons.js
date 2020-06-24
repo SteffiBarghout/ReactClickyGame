@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 const images = [
   {
-    url: '/images/mario.jpg',
+    url: './images/mario.jpg',
     title: 'Mario',
     width: '30%',
     height: '20%',
